@@ -1,0 +1,12 @@
+from django.db import models
+
+# Create your models here.
+
+
+class Note(models.Model):
+
+    title = models.CharField(max_length=200)
+    desc = models.TextField()
+    created = models.DateTimeField(auto_now_add=True)
+    deadline = models.DateTimeField()
+    completed = models.BooleanField(default=False)
