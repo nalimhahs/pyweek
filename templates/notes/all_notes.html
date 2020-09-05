@@ -14,7 +14,7 @@
     <ul>
     {% for note in notes %}
         <li>
-            {{ note.title }}
+            <a href="{% url 'show_single_note' note.pk %}">{{ note.title }}</a>
         </li>
     {% endfor %}
     </ul>
