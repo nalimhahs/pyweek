@@ -1,7 +1,13 @@
-{{note.title}}
-<br>
-{{note.desc}}
-<br>
-{{note.completed}}
-<br>
-{{note.deadline}}
+{% extends 'base.html' %}
+
+{% block title %} Note - {{note.title}} {% endblock %}
+
+{% block content %}
+    {{note.title}}
+    <br>
+    {{note.desc}}
+    <br>
+    {{note.completed}}
+    <br>
+    {{note.deadline}}
+{% endblock %}
