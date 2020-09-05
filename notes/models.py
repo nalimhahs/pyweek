@@ -10,3 +10,6 @@ class Note(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     deadline = models.DateTimeField()
     completed = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
